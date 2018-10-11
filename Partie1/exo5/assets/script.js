@@ -1,0 +1,1 @@
+$("#secondText").empty()
