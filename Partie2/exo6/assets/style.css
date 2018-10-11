@@ -1,15 +1,9 @@
-.color{
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin : 5px;
-}
-.green{
-  background-color: green;
-}
-.red{
-    background-color: red;
-}
-.blue{
-    background-color: blue;
+body {
+text-align: center;
+background-color:white;
+background-image:url(../images/bg_big2.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+color: white;
+padding-top: 120px;
 }
