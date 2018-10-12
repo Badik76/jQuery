@@ -8,7 +8,6 @@ color: white;
 padding-top: 120px;
 }
 
-
 .color{
   float: left;
   width: 20px;
@@ -23,4 +22,10 @@ padding-top: 120px;
 }
 .blue{
     background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
 }
