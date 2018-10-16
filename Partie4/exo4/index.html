@@ -10,17 +10,22 @@
   <title>Exercice 4</title>
 </head>
 <body>
-  <div class="sticky-top">
-  <div class="color yellow" id="yellow"></div>
-  <div class="color green" id="green"></div>
-  <div class="color red" id="red"></div>
-  <div class="color blue" id="blue"></div>
-  <div class="color orange" id="orange"></div>
-</div>
-  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+  <div id="erreur" hidden>
+      <p>Vous n'avez pas rempli correctement les champs du formulaire !</p>
+  </div>
+  <form>
+      <label for="pseudo">Prénom</label> <input type="text" id="prenom" class="champ" />
+      <label for="mdp">Nom</label> <input type="text" id="nom" class="champ" />
+      <label for="dateDeNaissance">Date de naissance</label><input type="date" id="dateDeNaissance" class="champ" />
+      <label for="lnais">Lieu de naissance</label> <input type="text" id="lnais" class="champ" />
+      <label for="Emploi">Emploi</label> <input type="text" id="Emploi" class="champ" />
+      <label for="Sos">Société</label> <input type="text" id="Sos" class="champ" />
+      <input type="submit" id="envoi" value="Envoyer" />
+  </form>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="assets/script.js"></script>
 </body>
 </html>
