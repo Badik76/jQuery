@@ -10,10 +10,54 @@
   <title>Exercice 3</title>
 </head>
 <body>
-  <h1 class="text-success"> Bienvenu dans notre petit jeu de déduction :</h1>
-  <p class="text-danger">Trouver un nombre entre 0 et 100 définit par l'ordinateur.</p>
-  <form>
-    <button type="button" name="button" id="submit">Owiiii !</button> <input type="text" id="textbox" value="0"></input>
+  <h1 class="text-success"> Formulaire d'inscription</h1>
+  <p class="text-danger">Veuillez rentrer les bonnes données dans chacunes des cases.</p>
+  <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Prénom</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Adolf" required>
+      <div class="valid-feedback">
+        Bravo tu sais écrire ton prénom !
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Nom de famille</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Hitler" required>
+      <div class="valid-feedback">
+        Congratz frère !
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">Email</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="mail" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Une adresse email : "tonadresse@lafin.ru"
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Adresse</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Adresse" required>
+      <div class="invalid-feedback">
+        Une adresse valide...
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Téléphone</label>
+      <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="form-control" id="validationCustom04" placeholder="0xxxxxxxxx" required>
+      <div class="invalid-feedback">
+        Numéro faux. On recommence.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
 </form>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
