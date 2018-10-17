@@ -7,14 +7,12 @@ ctx.lineWidth = "6";
 ctx.strokeStyle = "red";
 ctx.rect(5, 5, 290, 140);
 ctx.stroke();
-
 // Green rectangle
 ctx.beginPath();
 ctx.lineWidth = "4";
 ctx.strokeStyle = "green";
 ctx.rect(30, 30, 50, 50);
 ctx.stroke();
-
 // Blue rectangle
 ctx.beginPath();
 ctx.lineWidth = "10";
